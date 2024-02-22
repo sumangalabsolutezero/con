@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text"> sun-jukta, I know I messed it up and this time no code can fix it, yes I deserve all your ignorance, I have a crush on you for so long and as you know all of this shit, being friend is hard for me but u don't worry u don't have to change ur answer, I know I am not perfect nor better than your past I know my spoken skills are broken in front of girls and in front of u it just become vulnerable, but I will try to achieve perfection as a man and I hope u will like me a little. I hope in future if my fate shines we will meet again and obviously I will do my best to impress you. I love you I love you very much and before leaving everything to destiny, fate and Mahadev, I want to met you for first and may or may not be the last time.hsssss!!!</h1> 
+
+
+<h1 class="header_text">So, Do you wanna go out with me?</h1>
+<audio autoplay loop src="mymusic.mp3"></audio>
+      </div>
+
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
